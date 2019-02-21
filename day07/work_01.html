@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style type="text/css">
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    ul,
+    ol,
+    li {
+        list-style: none;
+    }
+
+    body {
+        background: #eee;
+    }
+
+    .all {
+        width: 800px;
+        margin: 0 auto;
+        background: #fff;
+        padding: 30px 30px;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    .div1 {
+        margin-top: 30px;
+    }
+
+    .div1>div {
+        margin-bottom: 20px;
+    }
+
+    .div1>input {
+        margin-left: -15px;
+        width: 300px;
+    }
+
+    .div1>div>span:nth-child(1) {
+        color: #5a8716;
+    }
+
+    .div1>div>span:nth-child(2) {
+        color: #ff2f60;
+    }
+
+    .div1>div>span:nth-child(3) {
+        color: #5e5e5e;
+    }
+
+    .ul1>li:nth-child(even) {
+        background: #eff6fb;
+    }
+
+    .div1>ul>li {
+        line-height: 30px;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="all">
+        <form class="f1">
+            <h1>聚会·调查问卷</h1>
+            <div class="div1">
+                <div>
+                    <span>您所属的部门和社团?</span>
+                    <span>*</span>
+                    <span>(必填)</span>
+                </div>
+                <input type="text" name="">
+            </div>
+            <div class="div1">
+                <div>
+                    <span>您所属的部门(社团)一般什么时候聚会一次?</span>
+                    <span>*</span>
+                    <span>(必填,单选)</span>
+                </div>
+                <ul class="ul1">
+                    <li>
+                        <label>
+                            <input type="radio" name="time">一星期一次</label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="radio" name="time">半个月一次</label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="radio" name="time" checked=""> 一个月以内
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="radio" name="time">一个月以上</label>
+                    </li>
+                </ul>
+            </div>
+            <div class="div1">
+                <div>
+                    <span>您所属的部门(社团)聚会常去的娱乐场所?</span>
+                    <span>*</span>
+                    <span>(必填,多选)</span>
+                </div>
+                <ul class="ul1">
+                    <li>
+                        <label>
+                            <input type="checkbox" name="place[]" checked="">KTV</label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="checkbox" name="place[]" checked="">酒吧</label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="checkbox" name="place[]" checked="">餐厅</label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="checkbox" name="place[]" checked="">电影院</label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="checkbox" name="place[]">酒店</label>
+                    </li>
+                </ul>
+            </div>
+            <div class="div1">
+                <div>
+                    <span>您所属的部门(社团)聚会的时间一般在什么时候?</span>
+                    <span>*</span>
+                    <span>(必填,单选)</span>
+                </div>
+                <ul class="ul1">
+                    <li>
+                        <label>
+                            <input type="radio" name="ti">星期一至星期三</label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="radio" name="ti">星期三至星期五</label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="radio" name="ti" checked="">周末(节假日)</label>
+                    </li>
+                </ul>
+            </div>
+            <div class="div1">
+                <div>
+                    <span>您聚会一般在上午还是下午,亦或是晚上?</span>
+                    <span>*</span>
+                    <span>(必填,单选)</span>
+                </div>
+                <ul class="ul1">
+                    <li>
+                        <label>
+                            <input type="radio" name="me">上午</label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="radio" name="me">下午</label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="radio" name="me" checked="">晚上</label>
+                    </li>
+                </ul>
+            </div>
+            <div class="div1">
+                <div>
+                    <span>您是大学几年级呢?</span>
+                    <span>*</span>
+                    <span>(必填,单选)</span>
+                </div>
+                <ul class="ul1">
+                    <li>
+                        <label>
+                            <input type="radio" name="e">大一</label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="radio" name="e">大二</label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="radio" name="e" checked="">大三</label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="radio" name="e">大四</label>
+                    </li>
+                </ul>
+            </div>
+            <div class="div1">
+                <div>
+                    <span>您聚会一次所需多少资金?(请务必真实)</span>
+                    <span>*</span>
+                    <span>(必填)</span>
+                </div>
+                <input type="text" name="" class="t1">
+            </div>
+            <div class="div1">
+                <div>
+                    <span>您所最中意的一首歌的名字?</span>
+                    <span>*</span>
+                    <span>(必填)</span>
+                </div>
+                <input type="text" name="" class="t1">
+            </div>
+            <div class="div1">
+                <div>
+                    <span>以上问题您是否真实填写了呢?如果是,请填写您的联系方式对于自己学业是否感到压力?有过几次逃课的情况?</span>
+                    <span>*</span>
+                    <span>(必填)</span>
+                </div>
+                <input type="text" name="" class="t1">
+            </div>
+            <div class="div1">
+                <div>
+                    <span>以上问题您是否真实填写了?如果是,请填写您的联系方式(QQ,微信),我将随机抽取赠送您艺术肖像画!当然你得发条说说给我看看~~</span>
+                    <span>*</span>
+                    <span>(必填)</span>
+                </div>
+                <input type="text" name="" class="t1">
+            </div>
+            <div class="div1">
+                <div>
+                    <span>如果有一家集烧烤,自主厨房,ktv,休闲桌游等为一体的经济实惠型聚会场所,您是否愿意邀请三五个好友去游玩?</span>
+                    <span>*</span>
+                    <span>(必填,单选)</span>
+                </div>
+                <ul class="ul1">
+                    <li>
+                        <input type="radio" name="yuanyi" checked="">愿意,come on!</li>
+                    <li>
+                        <input type="radio" name="yuanyi">不愿意,怪我咯!</li>
+                </ul>
+            </div>
+            <div class="div1">
+                <div>
+                    <span>如果您对此项目有很浓厚的兴趣并参与其中!您也可以留下联系方式!</span>
+                    <span>*</span>
+                    <span>(必填)</span>
+                </div>
+                <input type="text" name="" class="t1">
+            </div>
+    </div>
+    </form>
+    <div class="div2">
+        <button type="button">提交</button>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+</body>
+
+</html>

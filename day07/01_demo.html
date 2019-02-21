@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>浮动效果</title>
+    <style type="text/css">
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    a {
+        color: red;
+    }
+
+    ul,
+    ol,
+    li {
+        list-style: none;
+    }
+
+    .div1>ul:first-child {
+        float: left;
+    }
+
+    .div1>ul:last-child {
+        float: right;
+    }
+
+    .div1>ul:first-child>li,
+    .div1>ul:last-child>li {
+        float: left;
+    }
+    </style>
+</head>
+
+<body>
+    <!-- 浮动效果两种:1.左浮动 left
+	            2.右浮动 rigth -->
+    <div class="div1">
+        <ul>
+            <li><a href="#">北京</a></li>
+            <li><a href="#">天气</a></li>
+            <li><a href="#">日期</a></li>
+            <li><a href="#">背景</a></li>
+        </ul>
+        <ul>
+            <li><a href="#">新闻</a></li>
+            <li><a href="#">hao123</a></li>
+            <li><a href="#">地图</a></li>
+            <li><a href="#">知道</a></li>
+        </ul>
+    </div>
+</body>
+
+</html>

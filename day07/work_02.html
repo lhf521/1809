@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style type="text/css">
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    ul,
+    ol,
+    li {
+        list-style: none;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    .ul1 {
+        line-height: 50px;
+        background: #ebedef;
+    }
+
+    .ul1::after {
+        display: block;
+        content: "";
+        clear: both;
+    }
+
+    .ul1>li:hover {
+        background: green;
+    }
+
+
+    .ul1>li {
+        float: left;
+        width: 60px;
+        text-align: center;
+        position: relative;
+    }
+
+    .ul1>li>ul {
+        visibility: hidden;
+        position: absolute;
+        top: 50px;
+    }
+
+    .ul1>li:hover>ul {
+        visibility: visible;
+    }
+    </style>
+</head>
+
+<body>
+    <ul class="ul1">
+        <li>
+            <a href="#">北京</a>
+            <ul>
+                <li>好看</li>
+                <li>设定</li>
+                <li>订单</li>
+            </ul>
+        </li>
+        <li><a href="#">上海</a></li>
+        <li><a href="#">天津</a></li>
+        <li><a href="#">广州</a></li>
+        <li><a href="#">重庆</a></li>
+    </ul>
+</body>
+
+</html>

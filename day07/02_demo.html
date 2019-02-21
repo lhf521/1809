@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>京东列表</title>
+    <style type="text/css">
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    .ul1 {
+        list-style: none;
+        background: #ebedef;
+        line-height: 50px;
+        float: right;
+    }
+
+    .ul1::after {
+        content: "";
+        clear: both;
+        display: block;
+    }
+
+
+    .ul1>li {
+        float: left;
+    }
+
+    .ul1>li:hover {
+        background: green;
+    }
+
+    .ul1>li>a {
+        border-right: 1px solid blue;
+        text-decoration: none;
+        padding: 0 15px;
+    }
+
+    .ul1>li:last-child>a {
+        border: none;
+    }
+
+    .ul1>li:hover>a {
+        color: red;
+    }
+    </style>
+</head>
+
+<body>
+    <ul class="ul1">
+        <li><a href="#">你好,请登录</a></li>
+        <li><a href="#">京东手机</a></li>
+        <li><a href="#">京东电脑</a></li>
+        <li><a href="#">我的京东</a></li>
+        <li><a href="#">会员业务</a></li>
+        <li><a href="#">京东官网</a></li>
+        <li><a href="#">我的订单</a></li>
+        <li><a href="#">企业采购</a></li>
+        <li><a href="#">网站导航</a></li>
+    </ul>
+</body>
+
+</html>
